@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Word Counter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="logo">SmartTools</div>
+
+  <div class="toggle">
+    <button onclick="toggleTheme()">🌙 Theme</button>
+  </div>
+
+  <a class="badge" href="https://digitalheroesco.com" target="_blank">
+    Built for Digital Heroes
+  </a>
+</header>
+
+<main class="container">
+
+  <div class="card">
+
+    <h1>Word & Character Counter</h1>
+    <p class="meta">Built by: Insha Chaudhary | inshachaudhary050@gmail.com</p>
+
+    <textarea id="textInput" placeholder="Start typing here..."></textarea>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat"><h2 id="wordCount">0</h2><span>Words</span></div>
+      <div class="stat"><h2 id="charCount">0</h2><span>Characters</span></div>
+      <div class="stat"><h2 id="sentenceCount">0</h2><span>Sentences</span></div>
+      <div class="stat"><h2 id="readTime">0</h2><span>Min Read</span></div>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+
+      <button onclick="clearText()">Clear</button>
+      <button onclick="copyText()">Copy</button>
+      <button onclick="downloadText()">Download</button>
+
+    </div>
+
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

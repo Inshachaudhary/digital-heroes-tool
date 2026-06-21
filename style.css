@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🌈 BACKGROUND GRADIENT (BIG IMPROVEMENT) */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #9333ea);
+  color: white;
+  transition: 0.3s;
+}
+
+/* LIGHT MODE */
+body.light {
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  color: #0f172a;
+}
+
+/* HEADER */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* BUTTON BADGE */
+.badge {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: 0.3s;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.25);
+}
+
+/* MAIN CENTER */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* 💎 GLASS CARD (MAJOR UPGRADE) */
+.card {
+  width: 650px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+/* TITLE */
+h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+/* SUB TEXT */
+.meta {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  height: 170px;
+  border-radius: 14px;
+  padding: 14px;
+
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* STATS GRID */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* STAT BOX */
+.stat {
+  padding: 14px;
+  text-align: center;
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  transition: 0.3s;
+}
+
+.stat:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.18);
+}
+
+.stat h2 {
+  font-size: 22px;
+  color: #facc15; /* GOLD ACCENT */
+}
+
+/* BUTTONS */
+.actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: bold;
+
+  background: #3b82f6;
+  color: white;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(59,130,246,0.4);
+}
+
+/* CLEAR BUTTON DIFFERENT COLOR */
+button:nth-child(1) {
+  background: #ef4444;
+}
+
+button:nth-child(1):hover {
+  box-shadow: 0 10px 20px rgba(239,68,68,0.4);
+}
